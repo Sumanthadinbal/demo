@@ -5,7 +5,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="BoOKS")
+@Table(name="BOOKS")
 public class Book {
 
 	@Id
@@ -14,6 +14,16 @@ public class Book {
 	private String name;
 
 	private String authorName;
+	
+	private Double price;
+
+	public Double getPrice() {
+		return price;
+	}
+
+	public void setPrice(Double price) {
+		this.price = price;
+	}
 
 	public Book() {
 		super();
